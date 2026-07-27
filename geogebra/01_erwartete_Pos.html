@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Erwartete Position</title>
+
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ggb-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ggb-container">
+    <div id="ggb-element"></div>
+  </div>
+
+  <script>
+    const parameters = {
+      appName: "classic",
+      filename: "01-erwartete_Pos.ggb",
+      width: 1200,
+      height: 700,
+
+      showMenuBar: false,
+      showToolBar: false,
+      showAlgebraInput: false,
+      showResetIcon: true,
+      showFullscreenButton: true,
+
+      scaleContainerClass: "ggb-container",
+      autoHeight: true
+    };
+
+    const applet = new GGBApplet(parameters, true);
+
+    window.addEventListener("load", function () {
+      applet.inject("ggb-element");
+    });
+  </script>
+</body>
+</html>

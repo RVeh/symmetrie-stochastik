@@ -34,6 +34,11 @@ Vermutungen und ermöglichen die Kontrolle exakter Ergebnisse.
 
 ## GeoGebra
 
+Die GeoGebra-Simulationen können über die
+[gemeinsame Auswahlseite](https://rveh.github.io/symmetrie-stochastik/)
+direkt im Browser geöffnet werden.
+
+
 ### Positionen
 
 Die Datei untersucht für jede Position $j$ die relative Häufigkeit

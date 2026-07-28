@@ -78,6 +78,12 @@ Modellierung, der GeoGebra-Befehle und ihrer didaktischen Funktion.
 Alle veränderbaren Eingaben stehen jeweils am Anfang eines Notebooks.
 Die Voreinstellung `seed = 42` macht die Simulationen reproduzierbar.
 
+## Begleitmaterialien
+
+- [Erläuterungen zu den GeoGebra-Simulationen](materialien/GeoGebra-Simulationen.pdf)
+- [Weitergedacht](materialien/Weitergedacht.pdf)
+
+
 ## Weitergedacht
 
 Das vertiefende Material greift Beobachtungen auf, die beim Arbeiten mit

@@ -66,9 +66,9 @@ Der Binder-Start führt zunächst zur
 
 | Notebook | Inhalt |
 | --- | --- |
-| [Simulation_Urne_ohne_Zuruecklegen.ipynb](Simulation_Urne_ohne_Zuruecklegen.ipynb) | Relative Häufigkeiten \(h(A_j)\), exakte Invariante, Stabilisierung, bedingte Wahrscheinlichkeiten und hypergeometrischer Ausblick |
-| [Simulation_erwartete_Positionen.ipynb](Simulation_erwartete_Positionen.ipynb) | Positionen \(T_j\) der weißen Kugeln, empirische Erwartungswerte, Varianzen und Standardabweichungen sowie Spiegelsymmetrie |
-| [Simulation_Luecken.ipynb](Simulation_Luecken.ipynb) | Empirische und exakte Verteilung einer Lückenlänge, Erwartungswert, Varianz, Standardabweichung und punktweise Wilson-Konfidenzintervalle |
+| [Simulation_Urne_ohne_Zuruecklegen.ipynb](python/Simulation_Urne_ohne_Zuruecklegen.ipynb) | Relative Häufigkeiten \(h(A_j)\), exakte Invariante, Stabilisierung, bedingte Wahrscheinlichkeiten und hypergeometrischer Ausblick |
+| [Simulation_erwartete_Positionen.ipynb](python/Simulation_erwartete_Positionen.ipynb) | Positionen \(T_j\) der weißen Kugeln, empirische Erwartungswerte, Varianzen und Standardabweichungen sowie Spiegelsymmetrie |
+| [Simulation_Luecken.ipynb](python/Simulation_Luecken.ipynb) | Empirische und exakte Verteilung einer Lückenlänge, Erwartungswert, Varianz, Standardabweichung und punktweise Wilson-Konfidenzintervalle |
 
 Alle veränderbaren Eingaben stehen jeweils am Anfang eines Notebooks.
 Die Voreinstellung `seed = 42` macht die Simulationen reproduzierbar.

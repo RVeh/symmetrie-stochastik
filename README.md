@@ -70,8 +70,8 @@ Modellierung, der GeoGebra-Befehle und ihrer didaktischen Funktion.
 
 ## Python-Notebooks
 
-Der Binder-Start führt zunächst zur
-[Übersicht der Python-Programme](00_Start.ipynb).
+Als Einstieg dient die Datei `00_Start.ipynb`; sie enthält eine Übersicht und
+direkte Verweise auf alle drei Simulationsprogramme.
 
 | Notebook | Inhalt |
 | --- | --- |

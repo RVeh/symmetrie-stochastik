@@ -84,9 +84,7 @@ Die Voreinstellung `seed = 42` macht die Simulationen reproduzierbar.
 - [Weitergedacht](materialien/Weitergedacht.pdf)
 
 
-## Weitergedacht
-
-Das vertiefende Material greift Beobachtungen auf, die beim Arbeiten mit
+Das vertiefende Material `Weitergedacht`greift Beobachtungen auf, die beim Arbeiten mit
 der einfachen Positionssimulation entstanden sind. Es führt von der
 Invariante über die erwartete Zahl verschiedener Farbfolgen
 

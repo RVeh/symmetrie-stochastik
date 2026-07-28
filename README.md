@@ -2,6 +2,9 @@
 
 ## Ergänzende Materialien zu Symmetrien bei zufälligen Anordnungen
 
+[![Binder](https://mybinder.org/badge_logo.svg)](
+https://mybinder.org/v2/gh/RVeh/symmetrie-stochastik/HEAD?urlpath=lab/tree/python/00_Start.ipynb)
+
 [![Binder starten](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/SymmetrieStochastik/HEAD?labpath=python/00_Start.ipynb)
 
 Dieses Repository enthält die digitalen und vertiefenden Materialien zum

@@ -1,0 +1,70 @@
+name: Website mit JupyterLite veröffentlichen
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v6
+
+      - name: Python einrichten
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: JupyterLite installieren
+        run: python -m pip install -r jupyterlite/requirements.txt
+
+      - name: Bestehende Website übernehmen
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude=".git/" \
+            --exclude=".github/" \
+            --exclude="_site/" \
+            --exclude="jupyterlite/" \
+            ./ _site/
+
+      - name: JupyterLite erzeugen
+        run: |
+          jupyter lite build \
+            --contents jupyterlite/content \
+            --output-dir _site/jupyterlite
+          touch _site/.nojekyll
+
+      - name: GitHub Pages vorbereiten
+        uses: actions/configure-pages@v5
+
+      - name: Website bereitstellen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Website veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

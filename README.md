@@ -11,8 +11,8 @@ Beitrag
 > nicht hat? – Symmetrie bei zufälligen Anordnungen von Objekten aus zwei
 > Klassen.*
 
-Ausgangspunkt sind \(w\) weiße und \(s\) schwarze Kugeln, die ohne
-Zurücklegen gezogen und dadurch zufällig auf \(N=w+s\) Positionen
+Ausgangspunkt sind $w$ weiße und $s$ schwarze Kugeln, die ohne
+Zurücklegen gezogen und dadurch zufällig auf $N=w+s$ Positionen
 angeordnet werden.
 
 Die theoretischen Symmetrieargumente stehen im Zentrum des Beitrags. Die
@@ -28,20 +28,20 @@ Vermutungen und ermöglichen die Kontrolle exakter Ergebnisse.
 
 ### Positionen
 
-Die Datei untersucht für jede Position \(j\) die relative Häufigkeit
-\(h(A_j)\) einer weißen Kugel. Im Mittelpunkt steht die Leitfrage:
+Die Datei untersucht für jede Position $j$ die relative Häufigkeit
+$h(A_j)$ einer weißen Kugel. Im Mittelpunkt steht die Leitfrage:
 
 > Was bleibt bei jeder neuen Simulation gleich – und was stabilisiert
 > sich erst bei vielen Wiederholungen?
 
 Bei jeder Simulation gilt bereits exakt
 
-\[
+$$
 \frac{h(A_1)+\dots+h(A_N)}{N}=\frac{w}{N},
-\]
+$$
 
-während sich die einzelnen Werte \(h(A_j)\) erst mit wachsender
-Wiederholungszahl bei \(w/N\) stabilisieren. Dadurch werden die
+während sich die einzelnen Werte $h(A_j)$ erst mit wachsender
+Wiederholungszahl bei $w/N$ stabilisieren. Dadurch werden die
 unterschiedlichen Erkenntnisfunktionen von Simulation, Kombinatorik und
 Symmetrie sichtbar. Zugleich führt die Untersuchung zur Frage, was die
 Gleichberechtigung der Positionen für die eigene Entscheidung vor einem
@@ -49,7 +49,7 @@ einzigen Versuch bedeutet.
 
 ### Lückenlängen
 
-Die \(w\) weißen Kugeln erzeugen \(w+1\) Lücken für die \(s\) schwarzen
+Die $w$ weißen Kugeln erzeugen $w+1$ Lücken für die $s$ schwarzen
 Kugeln: vor, zwischen und nach den weißen Kugeln. Die Datei führt von
 einer einzelnen Farbfolge über die Lückenlängen zu einer Datenmatrix für
 viele Realisationen. Empirische Mittelwerte und Standardabweichungen
@@ -79,12 +79,12 @@ Das vertiefende Material greift Beobachtungen auf, die beim Arbeiten mit
 der einfachen Positionssimulation entstanden sind. Es führt von der
 Invariante über die erwartete Zahl verschiedener Farbfolgen
 
-\[
+$$
 E(D_m)
 =M\left(1-\left(1-\frac1M\right)^m\right),
 \qquad
 M=\binom{N}{w},
-\]
+$$
 
 bis zur Verbindung mit dem Rencontre-Problem. Der Erkenntnisweg zeigt
 exemplarisch, wie aus Beobachten, Fragen, Strukturieren, Begründen und

@@ -9,9 +9,6 @@ verändert und ausgeführt werden.
 
 [![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://rveh.github.io/symmetrie-stochastik/jupyterlite/lab/index.html?path=00_Start.ipynb)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](
-https://mybinder.org/v2/gh/RVeh/symmetrie-stochastik/HEAD?urlpath=lab/tree/python/00_Start.ipynb)
-
 
 Dieses Repository enthält die digitalen und vertiefenden Materialien zum
 Beitrag

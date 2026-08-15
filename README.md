@@ -10,7 +10,7 @@ verändert und ausgeführt werden.
 [![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://rveh.github.io/symmetrie-stochastik/jupyterlite/lab/index.html?path=00_Start.ipynb)
 
 Als Einstieg dient die Datei `00_Start.ipynb`; sie enthält eine Übersicht und
-direkte Verweise auf alle drei Simulationsprogramme.
+direkte Verweise auf alle vier Simulationsprogramme.
 
 Dieses Repository enthält die digitalen und vertiefenden Materialien zum
 Beitrag
@@ -78,18 +78,53 @@ Modellierung, der GeoGebra-Befehle und ihrer didaktischen Funktion.
 | --- | --- |
 | [Simulation_Urne_ohne_Zuruecklegen.ipynb](jupyterlite/content/Simulation_Urne_ohne_Zuruecklegen.ipynb) | Relative Häufigkeiten \(h(A_j)\), exakte Invariante, Stabilisierung, bedingte Wahrscheinlichkeiten und hypergeometrischer Ausblick |
 | [Simulation_erwartete_Positionen.ipynb](jupyterlite/content/Simulation_erwartete_Positionen.ipynb) | Positionen \(T_j\) der weißen Kugeln, empirische Erwartungswerte, Varianzen und Standardabweichungen sowie Spiegelsymmetrie |
-| [Simulation_Luecken.ipynb](jupyterlite/content/Simulation_Luecken.ipynb) | Empirische und exakte Verteilung einer Lückenlänge, Erwartungswert, Varianz, Standardabweichung und punktweise Wilson-Konfidenzintervalle |
+| [Simulation_Luecken.ipynb](jupyterlite/content/Simulation_Luecken.ipynb) | Lückenvektoren einzelner und vieler Farbanordnungen sowie empirische Mittelwerte, Varianzen und Standardabweichungen aller Lücken |
+| [Lueckenverteilung_empirisch_exakt.ipynb](jupyterlite/content/Lueckenverteilung_empirisch_exakt.ipynb) | Grafischer Vergleich der empirischen relativen Häufigkeiten einer ausgewählten Lücke mit ihrer exakten Verteilung, optional mit Wilson-Intervallen und Kennwerten; CSV-Export |
 
 Alle veränderbaren Eingaben stehen jeweils am Anfang eines Notebooks.
-Die Voreinstellung `seed = 42` macht die Simulationen reproduzierbar.
+Die Voreinstellung `seed = 42` beziehungsweise `SEED = 42` macht die
+Simulationen reproduzierbar.
+
+Im Notebook `Lueckenverteilung_empirisch_exakt.ipynb` werden für $w$ weiße
+und $s$ schwarze Kugeln gleichverteilte Farbanordnungen simuliert. Für eine
+ausgewählte Lücke $L_i$ werden die empirischen relativen Häufigkeiten
+$h_R(L_i=\ell)$ mit den exakten Wahrscheinlichkeiten
+$\mathbb P(L_i=\ell)$ verglichen. Empirische und exakte Werte erscheinen als
+getrennte Strecken links und rechts der ganzzahligen Lückenlänge $\ell$.
+Der feste NumPy-Generator `np.random.default_rng(SEED)` gewährleistet die
+Reproduzierbarkeit. Legende, punktweise Wilson-Intervalle, Kennwerte und Titel
+können unabhängig ein- oder ausgeschaltet werden.
 
 ## Begleitmaterialien
 
-- [Erläuterungen zu den GeoGebra-Simulationen](materialien/GeoGebra-Simulationen.pdf)
-- [Weitergedacht](materialien/Weitergedacht.pdf)
+### Simulation, Symmetrie und Vertiefungen
+
+- [Erläuterungen zu den GeoGebra-Simulationen](materialien/GeoGebra-Simulationen.pdf)  
+  Modellierung, Befehle und didaktische Funktion der Simulationen zu
+  Positionen und Lückenlängen.
+- [Wenn Terme Geschichten erzählen](materialien/Varianz_Lueckenlaenge-Terme-Geschichten.pdf)  
+  Ein schulgemäßer Weg zur Varianz einer Lückenlänge: von der exakten
+  GeoGebra-Auswertung über Vermutungen und Graphen bis zum Zählen schwarzer
+  Kugelpaare.
+- [Weitergedacht](materialien/Weitergedacht.pdf)  
+  Von einer Invariante über die erwartete Zahl verschiedener Farbfolgen bis
+  zum Rencontre-Problem.
+
+### Lotto-Realdaten
+
+- [Unterrichtsgang: von Lotto-Realdaten zur Theorie und zurück](materialien/Unterrichtsgang_Lotto_Realdaten_zur_Theorie.pdf)  
+  Ein möglicher Lernweg von einer Frage über Datenanalyse und Modellbildung
+  zur Symmetrie des Urnenmodells und zum abschließenden Theorievergleich.
+- [Reproduzierbares Paket zur Lotto-Realdatenanalyse](materialien/LOTTO_Realdatenanalyse_Paket.zip)  
+  Python-Notebook, Programm, dokumentierte Rohdaten, CSV- und Excel-Exporte
+  sowie Tabellen und Grafiken zu Gesamtmitteln, Ziehungstagen,
+  Fünfjahresabschnitten und gleitenden Fenstern.
+- [Excel-Auswertungen zu den Lottoziehungen](materialien/EXCEL-Auswertungen-Lotto.zip)  
+  Arbeitsmappen zu Lage und Streuung, Einzelhäufigkeiten sowie Zwillingen,
+  Drillingen und weiteren Folgen aufeinanderfolgender Gewinnzahlen.
 
 
-Das vertiefende Material `Weitergedacht`greift Beobachtungen auf, die beim Arbeiten mit
+Das vertiefende Material `Weitergedacht` greift Beobachtungen auf, die beim Arbeiten mit
 der einfachen Positionssimulation entstanden sind. Es führt von der
 Invariante über die erwartete Zahl verschiedener Farbfolgen
 
@@ -114,6 +149,5 @@ jupyter lab
 ```
 
 Eine lokale Installation ist für die Nutzung jedoch nicht erforderlich:
-Der Binder-Link am Anfang dieser Seite startet die Notebooks direkt im
-Browser. Beim ersten Aufruf kann der Aufbau der Umgebung einige Minuten
-dauern.
+Der JupyterLite-Link am Anfang dieser Seite startet die Notebooks direkt im
+Browser. Beim ersten Aufruf kann das Laden der Umgebung einen Moment dauern.
